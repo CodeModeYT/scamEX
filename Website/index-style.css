@@ -164,6 +164,7 @@ span.text {
   display: inline-block;
 }
 
+
 @media screen and (max-width: 1024px) {
   .wrapper {
     width: 85vw;
