@@ -53,8 +53,7 @@ async def serverreport(interaction, user_id: int, reason: str):
     interaction_server = interaction.guild
     interaction_server_name = interaction_server.name
     interaction_server_id = interaction_server.id
-    #user = client.get_user(int(user_id))
-    #await user.send(f"Thanks for your report, we will check it and get back to you! You can report again in 24h")
+    await interaction.response.send_message(f"Thanks for your report, we will check it and get back to you! You can report again in 24h", ephemeral=True)
     embedVar = discord.Embed(title="User Report", description="ID: soon", color=0x00ff00)
     embedVar.add_field(name="User information", value=f"Username: {username}\n User-ID: {user_id} \n from Server name: {interaction_server_name} \nfrom Server ID: {interaction_server_id}", inline=False)
     embedVar.add_field(name="Server information", value=f"Server-ID: {reported_user_id} \n Reason: {reported_reason}", inline=False)
