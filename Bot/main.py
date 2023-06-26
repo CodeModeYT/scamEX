@@ -76,9 +76,20 @@ async def serverreport(interaction, user_id: int, reason: str):
     await interaction.respo
 
 # MOD - only commmands
-@tree.command(name="addscam", description="MOD ONLY - Add a new scam to the system", guild=discord.Object(id=1057656714163404830))
+@tree.command(name="addserver", description="STAFF ONLY - Add a new scam server to the system")
 async def addscam(interaction):
-    await interaction.channel.send("Soon")
+    if interaction.guild.id == 1057656714163404830:
+        await interaction.channel.send("Soon")
+    else:
+        await interaction.channel.send("**Sorry, it seems like this command is not available!** \nThis command is only available to our staff team.")
+
+
+@tree.command(name="adduser", description="STAFF ONLY - Add a new scam user to the system")
+async def addscam(interaction):
+    if interaction.guild.id == 1057656714163404830:
+        await interaction.channel.send("Soon")
+    else:
+        await interaction.channel.send("**Sorry, it seems like this command is not available!** \nThis command is only available to our staff team.")
 
 @client.event
 async def on_ready():
