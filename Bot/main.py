@@ -55,6 +55,7 @@ async def serverreport(interaction, server_id: int, reason: str, invite: str):
     await channel.send(embed=embedVar)
     print("Got a new USER Report with report-ID = soon")
     interaction_user = interaction.user
+    #ADD 24h WAIT HERE!
     await interaction_user.send("**You are now able to submit new scams again!**\nIf you haven't gotten any feedback from your last scam report, this is due to us having many requests at the moment.\n*Thanks for your support!* \n*~the scamEX team*")
  
 @tree.command(name="userreport", description="Report a user to scamEX")
@@ -86,6 +87,7 @@ async def serverreport(interaction, user_id: int, reason: str):
     await channel.send(embed=embedVar)
     print("Got a new USER Report with report-ID = soon")
     interaction_user = interaction.user
+    #ADD 24h WAIT HERE!
     await interaction_user.send("**You are now able to submit new scams again!**\nIf you haven't gotten any feedback from your last scam report, this is due to us having many requests at the moment.\n*Thanks for your support!* \n*~the scamEX team*")
 
 # MOD - only commmands

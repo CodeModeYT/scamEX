@@ -1,0 +1,21 @@
+-- TODO
+1. Add database support to store scam data
+5. Add user WAITLIST --> only one submission every 24 hours    
+3. code the scam NOT ADD / NOT ACCEPT commmands --> also with user DM
+6. maybe add stats to the website
+
+    4. Add detection system / check before every command if a user is BLACKLISTES
+    2. Code the scam ADD commands --> with user DM
+
+INFO:
+eingerückt = needs database to be possible
+
+
+
+-- DATABASE FUNCTIONS
+1. store scam Server and scam user data
+2. store BLACKLIST accounts
+
+
+
+
